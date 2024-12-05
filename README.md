@@ -1,2 +1,2 @@
 # ProjectUAS
-Tempat Menumpulkan Project UAS
+Tempat Mengumpulkan Project UAS

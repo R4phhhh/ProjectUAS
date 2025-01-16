@@ -1,0 +1,130 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Main Container */
+.product-page {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: #FFCB05;  /* Yellow */
+  padding: 20px 0;
+  text-align: center;
+  color: #003366;  /* Blue */
+  font-size: 2rem;
+}
+
+.header .subtitle {
+  font-size: 1.2rem;
+  color: #003366;
+}
+
+/* Content Section */
+.content {
+  margin-top: 30px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-item h3 {
+  font-size: 1.5rem;
+  color: #003366;  /* Blue */
+  margin: 10px 0;
+}
+
+.product-item .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FF5722;  /* Red */
+}
+
+.product-item .stock {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Loading Spinner */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 20px;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+/* Footer */
+.footer {
+  background-color: #003366; /* Blue */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.alert {
+  background-color: #f8d7da;  /* Light red */
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 15px;
+  margin-top: 20px;
+}

@@ -1,0 +1,118 @@
+.cashier-section {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .cashier-section h2 {
+    color: #005CB8;
+    margin-bottom: 20px;
+  }
+  
+  .cashier-section .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .cashier-section .product-item {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+  }
+  
+  .cashier-section .product-item:hover:not(.out-of-stock) {
+    border-color: #005CB8;
+    transform: scale(1.02);
+  }
+  
+  .cashier-section .product-item.out-of-stock {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  /* CartPage.css */
+  .cart-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .cart-page h2 {
+    color: #005CB8;
+    margin-bottom: 30px;
+  }
+  
+  .cart-page .card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+  }
+  
+  .cart-page .card-title {
+    color: #005CB8;
+  }
+  
+  .cart-page .btn-secondary {
+    background-color: #005CB8;
+    border: none;
+  }
+  
+  .cart-page .btn-danger {
+    background-color: #ED1C24;
+    border: none;
+  }
+  
+  .cart-page .total-section {
+    background: #005CB8;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  .kasir-section {
+    margin-top: 2rem;
+  }
+  
+  .kasir-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .kasir-item {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .kasir-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .kasir-item .item-name {
+    color: #005CB8;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .kasir-item .item-price {
+    color: #FF5722;
+    font-weight: bold;
+  }
+  
+  .kasir-item .item-quantity {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
